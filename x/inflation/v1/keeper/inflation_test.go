@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"fmt"
 
+	"cosmossdk.io/math"
 	akilatypes "github.com/AkilaChain/akila/types"
 	inflationkeeper "github.com/AkilaChain/akila/x/inflation/v1/keeper"
 	"github.com/AkilaChain/akila/x/inflation/v1/types"
-	"cosmossdk.io/math"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 )
@@ -116,7 +116,7 @@ func (suite *KeeperTestSuite) TestGetCirculatingSupplyAndInflationRate() {
 			suite.SetupTest() // reset
 
 			// Team allocation is only set on mainnet
-			suite.ctx = suite.ctx.WithChainID("akila_9001-1")
+			suite.ctx = suite.ctx.WithChainID("akila_2927-1")
 			tc.malleate()
 
 			// Mint coins to increase supply
@@ -168,7 +168,7 @@ func (suite *KeeperTestSuite) TestBondedRatio() {
 
 			// Team allocation is only set on mainnet
 			if tc.isMainnet {
-				suite.ctx = suite.ctx.WithChainID("akila_9001-1")
+				suite.ctx = suite.ctx.WithChainID("akila_2927-1")
 			} else {
 				suite.ctx = suite.ctx.WithChainID("akila_9999-666")
 			}

@@ -37,8 +37,8 @@ func (suite *KeeperTestSuite) TestWithChainID() {
 		},
 		{
 			"success - Akila mainnet chain ID",
-			"akila_9001-2",
-			9001,
+			"akila_2927-2",
+			2927,
 			false,
 		},
 		{

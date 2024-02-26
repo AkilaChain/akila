@@ -22,7 +22,7 @@ import (
 
 const (
 	// MainnetChainID defines the Akila EIP155 chain ID for mainnet
-	MainnetChainID = "akila_9001"
+	MainnetChainID = "akila_2927"
 	// TestnetChainID defines the Akila EIP155 chain ID for testnet
 	TestnetChainID = "akila_9000"
 	// BaseDenom defines the Akila mainnet denomination

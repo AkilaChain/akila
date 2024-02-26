@@ -119,8 +119,8 @@ func (k *Keeper) WithChainID(ctx sdk.Context) {
 		panic("chain id already set")
 	}
 
-	if !(chainID.Cmp(big.NewInt(9001)) == 0 || chainID.Cmp(big.NewInt(9000)) == 0) {
-		panic("EVM only supports Akila chain identifiers (9000 or 9001)")
+	if !(chainID.Cmp(big.NewInt(2927)) == 0 || chainID.Cmp(big.NewInt(9000)) == 0) {
+		panic("EVM only supports Akila chain identifiers (9000 or 2927)")
 	}
 
 	k.eip155ChainID = chainID

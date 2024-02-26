@@ -49,7 +49,7 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 	akilad keys add "$KEY" --keyring-backend $KEYRING --algo $KEYALGO --home "$HOMEDIR"
 
 
-	# Set moniker and chain-id for Hekas (Moniker can be anything, chain-id must be an integer)
+	# Set moniker and chain-id for Akila (Moniker can be anything, chain-id must be an integer)
 	akilad init $MONIKER -o --chain-id $CHAINID --home "$HOMEDIR"
 
 	# Change parameter token denominations to aakila
@@ -82,4 +82,4 @@ if [[ $overwrite == "y" || $overwrite == "Y" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-akilad start --metrics "$TRACE" --log_level $LOGLEVEL --minimum-gas-prices=0.0001aakila --json-rpc.api eth,web3 --api.enable --home "$HOMEDIR"
+akilad start --metrics "$TRACE" --log_level $LOGLEVEL --minimum-gas-prices=0.0001aakila --json-rpc.api eth --api.enable --home "$HOMEDIR"

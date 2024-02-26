@@ -1,0 +1,21 @@
+{
+  "metadata": [
+    {
+      "description": 1,
+      "denom_units": [
+        {
+          "denom": "aakila",
+          "exponent": 0
+        },
+        {
+          "denom": "akila",
+          "exponent": 18
+        }
+      ],
+      "base": "aakila",
+      "display": "aakila",
+      "name": "aakila",
+      "symbol": "AKILA"
+    }
+  ]
+}
